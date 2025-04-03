@@ -9,7 +9,7 @@ set -e
 # 进入生成的文件夹
 cd vue3_admin_test
 
-git pull
+# git pull
 git init
 git add -A
 git commit -m 'deploy'

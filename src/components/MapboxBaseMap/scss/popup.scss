@@ -1,0 +1,77 @@
+$popupBg: rgba(12, 38, 77, 0.75);
+
+// 气泡
+::v-deep(.maplibregl-popup) {
+  max-width: 260px !important;
+
+  &.maplibregl-popup-anchor-top {
+    .maplibregl-popup-tip {
+      border-bottom-color: $popupBg;
+    }
+  }
+
+  &.maplibregl-popup-anchor-bottom {
+    .maplibregl-popup-tip {
+      border-top-color: $popupBg;
+    }
+  }
+
+  &.maplibregl-popup-anchor-left {
+    .maplibregl-popup-tip {
+      border-right-color: $popupBg;
+    }
+  }
+
+  &.maplibregl-popup-anchor-right {
+    .maplibregl-popup-tip {
+      border-left-color: $popupBg;
+    }
+  }
+
+  .maplibregl-popup-content {
+    width: 100%;
+    padding-top: 12px;
+    border-top: solid 2px #3395be;
+    background: rgba(12, 38, 77, 0.75);
+    color: #fff;
+
+    &>button {
+      display: none;
+    }
+
+    .popupp_wrap {
+      .el-descriptions {
+        .el-descriptions__header {
+          margin-bottom: 8px;
+
+          .el-descriptions__title {
+            font-size: 12px;
+            font-weight: initial;
+            color: #fff;
+          }
+        }
+
+        .el-descriptions__body {
+          background: transparent;
+
+          table {
+            tbody {
+              tr {
+                td {
+                  &:first-child {
+                    min-width: 80px;
+                  }
+
+                  font-size: 12px;
+                  font-weight: initial;
+                  color: #eee;
+                  background: rgba(12, 38, 77, 0.75);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -9,13 +9,11 @@ lerna-debug.log*
 
 node_modules
 dist
-vue3-admin-demo
+vue3_admin_test
 dist-ssr
 stats.html
 .history
 *.local
-
-vue3-admin-demo
 
 # Editor directories and files
 .vscode/*
